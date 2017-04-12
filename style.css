@@ -1,0 +1,54 @@
+html {
+  background-color: #1fc8db;
+}
+body {
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) fixed no-repeat;
+}
+nav {
+  background: linear-gradient(110deg, #87c5ff 0%, #cfcffc 45%, #3e3e47 90%) fixed no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  border-right: thick solid black;
+}
+nav a {
+  display: block;
+}
+h1 {
+  color: #264868;
+  text-align: center;
+}
+article {
+  background-color: #264868;
+  color: #edf2f7;
+  padding: 5%;
+  border: thick solid #a4eff9;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5%;
+}
+article h2, article h5 {
+  color: #d1f2ff;
+  text-align: center;
+}
+article h4 {
+  color: #acb4b7;
+  text-align: right;
+}
+article img {
+  width: 50%;
+  max-width: 200px;
+  float: left;
+  border-radius: 3%;
+  margin: 0 10px 10px 10px;
+}
+form {
+  clear: both;
+  text-align: center;
+}
+input, select {
+  color: black;
+}
