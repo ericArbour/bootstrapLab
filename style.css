@@ -4,6 +4,9 @@ html {
 body {
   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) fixed no-repeat;
 }
+main {
+  padding-bottom: 60px;
+}
 nav {
   background: linear-gradient(110deg, #87c5ff 0%, #cfcffc 45%, #3e3e47 90%) fixed no-repeat;
   position: fixed;
@@ -51,4 +54,26 @@ form {
 }
 input, select {
   color: black;
+}
+.new-line-form {
+  display: block;
+  margin: 5px auto;
+}
+footer {
+  background-color: #142851;
+  position: fixed;
+  bottom: 7px;
+  width: 60%;
+  border-radius: 20px;
+  padding: 10px;
+  color: #4c7ce0;
+  text-align: center;
+}
+a, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: #f2fffc;
+}
+a:hover {
+  text-decoration: none;
+  color: #3affd1;
 }

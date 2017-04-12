@@ -27,10 +27,10 @@
             <h5>Was this article helpful?</h5>
             <label><input type="radio" name="opinion" value="no" checked> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></label>
             <label><input type="radio" name="opinion" value="yes"> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></label>
-            <h5>What is your favorite food?</h5>
-            <label><input type="checkbox" name="food" value="salad">Salad</label>
-            <label><input type="checkbox" name="food" value="soup" disabled>Soup</label>
-            <label><input type="checkbox" name="food" value="cake">Cake</label>
+            <h5>What are your favorite foods?</h5>
+            <label><input type="checkbox" name="food" value="salad">Salad<span class="glyphicon glyphicon-leaf" aria-hidden="true"></span></label>
+            <label data-toggle="tooltip" title="No, you're not allowed to choose soup. Did you even read the article?"><input type="checkbox" name="food" value="soup" disabled>Soup<span class="glyphicon glyphicon-trash" aria-hidden="true"></span></label>
+            <label><input type="checkbox" name="food" value="cake">Cake<span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span></label>
             <h5>Personal Information</h5>
             <label>
               Location
@@ -88,14 +88,32 @@
               	<option value="WY">Wyoming</option>
               </select>
             </label>
-            <label>Birthdate<input type="date" name="date"></label>
-            <input type="submit">
+            <label class="new-line-form">Birthdate<input type="date" name="date"></label>
+            <input type="submit" class="new-line-form">
           </form>
         </article>
+        <footer>
+          <div class="row">
+            <div class="col-xs-4">
+              <i class="glyphicon glyphicon-copyright-mark"></i> 2017
+            </div>
+            <div class="col-xs-4">
+              <a href="mailto:someone@example.com">Email Me</a>
+            </div>
+            <div class="col-xs-4">
+              No opinions are my own.
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   </main>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <sript src="bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 </body>
 </html>
